@@ -1,0 +1,585 @@
+
+@font-face {
+  font-family: 'iconfont';  /* project id 411370 */
+  src: url('http://at.alicdn.com/t/font_411370_z2zvnnbzbf9od2t9.eot');
+  src: url('http://at.alicdn.com/t/font_411370_z2zvnnbzbf9od2t9.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_411370_z2zvnnbzbf9od2t9.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_411370_z2zvnnbzbf9od2t9.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_411370_z2zvnnbzbf9od2t9.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background-color: #f2f2f2;
+}
+/* 头部开始 */
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #444;
+}
+main{
+	max-width: 1024px;
+	height: 100%;
+	background-color:#444;
+	margin: 0 auto;
+
+}
+header span{
+    float: right;
+    line-height: 40px;
+    font-size: 12px;
+    color: #a8a8aa;
+    font-family: 苹方;
+}
+
+
+/* 头部结束 */
+/* 导航开始 */
+nav{
+	width: 100%;
+	height: 44px;
+	background-color: #040404;
+}
+nav main{
+    text-align:justify;  /* 设置文本两端对齐方式  只能让行内块元素两端对齐*/    /* diaplay 优先级的问题 */
+    background-color: #040404;
+}
+/* 处理我们的text-align:justify;的bug问题    只能指定为行内块元素*/
+nav main:after{
+     content: "";
+     display: inline-block;     /* 行内块元素，必须设置 */
+     width: 100%;
+     font-size: 0;
+     line-height: 0;
+}
+nav a{
+
+	font-size: 14px;
+	line-height: 44px;
+	color: #fff;
+}
+
+nav a:hover{
+  color: #999;
+}
+/* 导航结束 */
+
+
+/* banner开始 */
+.banner{
+	width: 100%;
+	height: 496px;
+}
+
+.banner-imgbox{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/banner1.jpg');
+	background-size: cover;
+	background-position: top center;
+    position: relative;
+}
+
+.wenzi{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+  /*   width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; */
+}
+.wenzi span{
+    display: block;
+    width: 100%;
+    height: 50%;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    /* width: 100%;
+    font-size: 32px;
+    color: #fff;
+     text-align: center; */
+}
+.wenzi span:nth-child(2){
+    display: block;
+    width: 100%;
+    height: 50%;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+   /*  width: 100%;
+    font-size: 48px;
+    color: #fff; */
+}
+.btnL{
+    width: 64px;
+    height: 64px;
+    background-color:rgba(0,0,0,0.44);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 25px;
+    padding: 18px;
+}
+.btnL i{
+    font-size: 24px;
+    color:#fff;
+}
+.btnR{
+    width: 64px;
+    height: 64px;
+    background-color:rgba(0,0,0,0.44);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    right:25px;
+    padding: 18px;
+}
+.btnR i{
+    font-size: 24px;
+    color:#fff; /* rgba(136,136,136,0.8); */
+}
+.lunbo{
+    position: absolute;
+    left: 45%;
+    bottom: 30px;
+    
+}
+.lunbo span{
+    width: 50px;
+    height: 2px;
+    background-color: #e2e2e2;
+    float: left;
+    margin-right: 10px;
+}
+
+/* banner结束 */
+
+
+/* 列表图片开始 */
+.bList{
+    width: 100%;
+    height: 272px;
+    margin-top: 4px;
+}
+.bList .imgbox{
+    width: 25%;
+    height: 100%;
+    border-right: 2px solid #fff;
+    background-image: url('../img/liebiao13.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    float: left;
+    position: relative;
+}
+
+.imgbox .liebiao1{
+    width: 80%;
+    height: 54px;
+    font-size: 19px;
+    color: #111;
+    position: absolute;
+    font-weight: normal;
+    left: 28px;
+    top: 0;
+    text-align: center;
+    padding-top: 25px; 
+}
+.imgbox .liebiao2{
+    width: 80%;
+    height: 214px;
+    font-size: 17px;
+    text-align: center;
+    position: absolute;
+    left: 28px;
+    top: 52px;
+}
+
+
+/* 列表图片结束 */
+/* 底部栏开始 */
+#dibulan{
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: 2px;
+    padding-top: 42px;
+}
+#dibulan section{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 0 22px;
+}
+.dBox{
+    width: 20%;
+    float: left;
+    margin-bottom: 28px;
+}
+.dBox  h5{
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.dBox  a{
+    font-size: 12px;
+    color: #555;
+}
+.dser1{
+    width: 980px;
+    /* height: 24px; */
+    color: #f4f4f4;
+    background-color: #f2f2f2;
+    float: left;
+    margin-bottom: 20px;
+}
+.dser1 h4{
+    font-size: 12px;
+    color: #8e98a5;
+}
+section h6{
+    font-size: 12px;
+    color: #8e98a5;
+}
+.bBottom{
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #d6d6d6;
+    padding-top: 5px;
+    position: relative;
+}
+.bBottom h6{
+    float: left;
+    margin-right: 45px;
+}
+.bBottom a{
+    font-size: 12px;
+    color: #8e98a5;
+    float: left;
+    margin-right: 7px;
+}
+
+
+.bBottom span{
+    float: left;
+    color: #8e98a5;
+    margin-top: -4px;
+    margin-right: 7px;
+}
+
+.rBottom{
+    float: right;
+    margin-left: 10px;
+    z-index: 99;
+}
+.rBottom img{
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+.bBottom h5{
+    font-size: 12px;
+    color: #8e98a5;
+    float: right;
+    margin-left: 5px;
+}
+
+section a:hover{
+  text-decoration: underline;
+}
+
+/* 小屏开始 */
+#xiaoping{
+  width: 100%;
+  height: 294px;
+  background-color: #F2F2F2;
+  padding: 0 26px;
+  float: left;
+  margin-top: 20px;
+}
+
+#xiaoping li{
+  width: 100%;
+  height: 39px;
+  border-bottom: 1px solid #d6d6d6;
+}
+#xiaoping a{
+  font-size: 12px;
+  color: #000;
+  font-weight: normal;
+  line-height: 39px;
+  float: left;
+}
+#xiaoping h6{
+  font-size:16px;
+  color: #000;
+  font-weight: normal;
+  line-height: 39px;
+  float: right;
+}
+.bottom1{
+   width: 100%;
+   height: 143px;
+   /* background-color: #f2f2f2; */
+   float: left;
+}
+
+.bottom1 span{
+   font-size: 12px;
+   color: #8e98a5;
+   padding: 0 26px;
+   float: left;
+   margin-top: 13px;
+}
+.tutu{
+  width: 100%;
+  height: 16px;
+  margin-top: 10px;
+}
+.tutu img{
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+.tutu h5{
+    font-size: 12px;
+    color: #000;
+    float: left;
+    margin-left: 5px;
+}
+.zbottom{
+    width: 100%;
+    height: 16px;
+    margin-top: 10px;
+    float: left;
+    padding: 0 26px;
+}
+
+.zbottom a{
+    font-size: 12px;
+    color: #8e98a5;
+    float: left;
+    margin-right: -14px;
+}
+
+
+.zbottom span{
+    float: left;
+    color: #8e98a5;
+    margin-top: -1px;
+    margin-right:-14px;
+}
+/* 小屏结束 */
+
+/* 底部栏结束 */
+
+
+/* 屏幕小于1024px */
+@media screen and (max-width: 1024px){      /* add值后边加空格 */
+     main{
+     	padding-right: 24px;
+     }
+     nav main{
+     	padding-left: 24px;
+     }
+     #dibulan main{
+        background-color: #f2f2f2;
+        padding: 0 24px;
+     }
+
+     .banner{
+     	height: 456px;
+     }
+     .banner-imgbox{
+	    width: 100%;
+	    height: 100%;
+	    background-image: url('../img/banner2.jpg');
+	    background-size: cover;
+	    background-position: top center;
+
+    }
+
+    .wenzi span{
+      display: block;
+      width: 100%;
+      height: 46px;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      line-height: 46px;
+    }
+    
+
+    .wenzi span:nth-child(2){
+      display: block;
+      width: 100%;
+      height: 42px;
+      font-size: 28px;
+      color: #fff;
+      text-align: center;
+      line-height: 42px;
+    }
+    .bList{
+      width: 100%;
+      height: 272px;
+      margin-top: 2px;
+    }
+
+    .bList .imgbox{
+      width: 50%;
+      height: 268px;
+      border: 1px solid #fff;
+      background-color: yellow;
+      background: url('../img/liebaio12.jpg') no-repeat;
+      background-size: cover;
+      background-position: bottom center;
+      float: left;
+      position: relative;
+    }
+
+    .dBox{
+      width: 20%;
+      float: left;
+      padding-top: 22px;
+    }
+
+    #dibulan{
+      width: 100%;
+      height: 600px;
+      background-color: #f2f2f2;
+      margin-top: 2px;
+      padding-top: 20px;
+    }
+    section{
+      width: 100%; 
+    }
+    .dser1{
+      width: 100%;
+      padding: 0 10px;
+    }
+    .bBottom h6{
+      float: none;
+    }
+    .bBottom a{
+      float: none;
+    }
+
+    .bBottom span{
+      float: none;
+    }
+    .rBottom{
+      position: absolute;
+      right: 0;
+      bottom:20px;
+    }
+    
+
+    
+}
+
+/* 屏幕大于768 */
+@media screen and (min-width:768px){
+	 .nav-daping{
+	 	display: block;
+	 }
+     .nav-xiaoping{
+     	display: none;
+     }
+
+     section{
+      display: block;
+    }
+    #Xping{
+      display: none;
+    }
+
+      
+}
+/* 屏幕小于768 */
+
+@media screen and (max-width:768px){
+	 .nav-daping{
+	 	display: none;
+	   }
+    .nav-xiaoping{
+     	display: block;
+     }
+
+    .banner{
+     	height: 376px;
+
+     }
+
+     .banner-imgbox{
+	    width: 100%;
+	    height: 100%;
+	    background-image: url('../img/banner3.jpg');
+	    background-size:cover;
+	    background-position: top center;
+     }
+    
+    .wenzi span{
+      display: block;
+      width: 100%;
+      height: 36px;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      line-height: 36px;
+     }
+    
+
+    .wenzi span:nth-child(2){
+      display: block;
+      width: 100%;
+      height: 34px;
+      font-size: 22px;
+      color: #fff;
+      text-align: center;
+      line-height: 34px;
+     }
+
+    .bList .imgbox{
+      width: 100%;
+      height: 268px;
+      border-right: 2px solid #fff;
+      background-color: yellow;
+      background: url('../img/liebaio11.jpg') no-repeat;
+      background-size: cover;
+      background-position: bottom center;
+      float: left;
+      position: relative;
+     }
+
+    section{
+      display: none;
+     }
+     #Xping{
+      display: block;
+     }
+}
+
+
+
+
+
+
+
+
+
+
